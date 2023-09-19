@@ -1,6 +1,11 @@
 name: Commit Stage
 on: push
 
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NBAME: mazyu36/catalog-service
+  VERSION: latest
+
 jobs:
   build:
     name: Build and Test
